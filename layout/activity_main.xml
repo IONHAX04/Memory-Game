@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_page_heading"
+                android:text="Welcome to Memory Game"
+                android:fontFamily="@font/lobster"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_margin="30dp"
+                android:gravity="center"></TextView>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/start_logo"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/start_page_heading"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/joker"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text"
+                android:elevation="10dp"></ImageView>
+
+            <Button
+                android:id="@+id/small"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/start_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/lobster"
+                android:text="Beginner - 12 tiles"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/medium"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/small"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/lobster"
+                android:text="Intermediate - 16 tiles"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/large"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medium"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/lobster"
+                android:text="Advanced - 20 tiles"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"></Button>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="By Continuing, you agree to Memory Game's Terms of Service, Privacy Policy"
+                android:layout_below="@id/large"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lobster"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+</RelativeLayout>
